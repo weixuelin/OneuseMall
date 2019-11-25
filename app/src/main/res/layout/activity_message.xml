@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+    <include layout="@layout/titlebar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative_message_system"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_160">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/qb_px_30"
+                android:src="@drawable/message_system" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/qb_px_120"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="系统通知"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/qb_px_28" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/qb_px_30"
+                    android:text="平台已同意您的退货申请"
+                    android:textColor="@color/grey_main"
+                    android:textSize="@dimen/qb_px_26" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/qb_px_100"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/qb_px_30"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017-01-15"
+                    android:textColor="@color/grey_hint"
+                    android:textSize="@dimen/qb_px_24" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_1"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:id="@+id/relative_message_order"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_160">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/qb_px_30"
+                android:src="@drawable/message_order" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/qb_px_120"
+                android:layout_marginRight="@dimen/qb_px_180"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="订单通知"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/qb_px_28" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/qb_px_30"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="您的订单已经开始配送，请耐心等待!"
+                    android:textColor="@color/grey_main"
+                    android:textSize="@dimen/qb_px_26" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_order"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/qb_px_100"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/qb_px_30"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017-01-15"
+                    android:textColor="@color/grey_hint"
+                    android:textSize="@dimen/qb_px_24" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

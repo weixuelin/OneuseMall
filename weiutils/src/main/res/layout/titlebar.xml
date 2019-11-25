@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <com.hjq.bar.TitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        app:leftColor="@color/titlebar_text_color"
+        app:leftIcon="@mipmap/bar_icon_back_white"
+        app:lineColor="@color/white"
+        app:rightColor="@color/titlebar_text_color"
+        app:titleColor="@color/white"
+        app:titleSize="@dimen/qb_px_32" />
+</FrameLayout>

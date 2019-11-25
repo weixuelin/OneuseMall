@@ -1,0 +1,55 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+android {
+    compileSdkVersion 28
+
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.0-beta01'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
+    //相册视频选择器
+    api 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.3'
+    //网络请求
+    api 'com.google.code.gson:gson:2.8.5'
+    //loadingview
+    api 'com.github.ybq:Android-SpinKit:1.2.0'
+    //titlebar
+    api 'com.hjq:titlebar:5.0'
+    //状态栏util
+    api 'com.jaeger.statusbarutil:library:1.5.1'
+    //toast
+    api 'com.sdsmdg.tastytoast:tastytoast:0.1.1'
+    api 'com.squareup.okhttp3:okhttp:3.10.0'
+    api 'com.squareup.okio:okio:1.14.1'
+    api 'com.google.android:flexbox:1.0.0'
+    api 'com.yanzhenjie.alertdialog:alertdialog:1.0.1'
+    /*下拉刷新上拉加载*/
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-20'
+    /**
+     * 高斯模糊
+     */
+    implementation 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.qyc.wxl.oneusemall.weight.NoScrollViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_1"
+        android:background="@color/line" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_110"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/bottom_main"
+            style="@style/radioButton"
+            android:drawableTop="@drawable/selector_bottom_main"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/bottom_classify"
+            style="@style/radioButton"
+            android:drawableTop="@drawable/selector_bottom_goods"
+            android:text="商品" />
+
+        <RadioButton
+            android:id="@+id/bottom_consult"
+            style="@style/radioButton"
+            android:drawableTop="@drawable/selector_bottom_bao"
+            android:text="汽车保养" />
+
+        <RadioButton
+            android:id="@+id/bottom_car"
+            style="@style/radioButton"
+            android:drawableTop="@drawable/selector_bottom_order"
+            android:text="订单" />
+
+        <RadioButton
+            android:id="@+id/bottom_person"
+            style="@style/radioButton"
+            android:drawableTop="@drawable/selector_bottom_user"
+            android:text="我的" />
+    </RadioGroup>
+
+</LinearLayout>

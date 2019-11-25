@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="CustomAppTheme_textinputLayout" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorAccent">#000000</item>
+        <item name="android:textColorHint">@color/grey_hint</item>
+        <item name="colorControlNormal">@color/grey_hint</item>
+        <item name="colorControlActivated">@color/grey_hint</item>
+        <item name="colorControlHighlight">@color/grey_hint</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    <style name="radioButton" parent="android:Widget.CompoundButton.RadioButton">
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">@dimen/qb_px_10</item>
+        <item name="android:textColor">@drawable/selector_bottom_text</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <declare-styleable name="BadgeView">
+        <!--显示文本-->
+        <attr name="badgeText" format="string" />
+        <!--文本字体大小-->
+        <attr name="badgeTextSize" format="dimension" />
+        <!--文本颜色-->
+        <attr name="badgeTextColor" format="color" />
+        <!--边框宽度-->
+        <attr name="badgeBorderWidth" format="dimension" />
+        <!--边框颜色-->
+        <attr name="badgeBorderColor" format="color" />
+        <!--气泡背景色-->
+        <attr name="badgeBgColor" format="color" />
+        <!--徽章显示的位置-->
+        <attr name="badgeAnchorPosition">
+            <enum name="AnchorLeftTop" value="0" />
+            <enum name="AnchorLeftBottom" value="1" />
+            <enum name="AnchorRightTop" value="2" />
+            <enum name="AnchorRightBottom" value="3" />
+        </attr>
+        <!--徽章在水平方向的margin-->
+        <attr name="badgeMarginHorizon" format="dimension" />
+        <!--徽章在垂直方向的margin-->
+        <attr name="badgeMarginVertical" format="dimension" />
+        <!--徽章内部水平padding-->
+        <attr name="badgePaddingHorizon" format="dimension" />
+        <!--徽章内部垂直padding-->
+        <attr name="badgePaddingVertical" format="dimension" />
+    </declare-styleable>
+</resources>

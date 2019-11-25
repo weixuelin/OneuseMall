@@ -1,0 +1,37 @@
+<resources>
+    <string name="net_not_connected">发送请求失败，请检查网络连接</string>
+    <string name="net_server_connected_error">连接服务器失败，请稍后重试</string>
+    <string name="net_server_error">服务器处理请求失败，请稍后重试</string>
+    <string name="net_server_param_error">应用数据出错，请刷新重试</string>
+    <string name="net_unknown_error">未知错误，请稍后重试</string>
+
+    <string name="message_permission_rationale">请获取以下权限：</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新…</string>
+    <string name="pull_to_refresh_release_label">松开立即刷新…</string>
+    <string name="pull_to_refresh_refreshing_label">拼命加载中…</string>
+    <string name="pull_to_refresh_nomore_label">没有更多了</string>
+    <string name="failed">请求失败，请检查网络是否通畅！</string>
+    <string name="for_password">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <string name="cancel">取消</string>
+    <string name="login">登录</string>
+    <string name="confirm">确定</string>
+    <string name="personal_center">个人中心</string>
+    <string name="setting">设置</string>
+    <string name="exit">再次点击将退出</string>
+    <string name="select_pic_source">请选择图片来源</string>
+    <string name="select_pic_from_shot">拍照</string>
+    <string name="select_pic_from_photos">从相册中选取</string>
+
+
+    <!--ProgressDialog-->
+    <string name="progress_being_loading">正在加载...</string>
+    <string name="progress_please_wait_moment">请稍候…</string>
+    <string name="tab_home">首页</string>
+    <string name="tab_shopcar">购物车</string>
+    <string name="tab_sort">分类</string>
+    <string name="tab_mine">我的</string>
+    <string name="tab_information">资讯</string>
+
+    <string name="filter_vcode">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+</resources>

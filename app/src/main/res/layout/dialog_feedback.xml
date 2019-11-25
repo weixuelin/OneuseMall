@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_white_not"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/qb_px_50"
+    android:paddingBottom="@dimen/qb_px_50">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="感谢您提供宝贵的建议及意见"
+        android:textColor="@color/black"
+        android:textSize="@dimen/qb_px_30" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/qb_px_8"
+        android:text="您的意见已成功提交"
+        android:textColor="@color/black"
+        android:textSize="@dimen/qb_px_30" />
+
+    <TextView
+        android:id="@+id/text_sure"
+        android:layout_width="@dimen/qb_px_180"
+        android:layout_height="@dimen/qb_px_60"
+        android:layout_marginTop="@dimen/qb_px_20"
+        android:background="@drawable/btn_red"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/qb_px_26" />
+</LinearLayout>

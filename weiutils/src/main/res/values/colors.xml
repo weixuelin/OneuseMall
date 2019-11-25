@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="titlebar_color">#EA3249</color>
+    <color name="titlebar_text_color">#333333</color>
+    <color name="colorMain">#333333</color>
+    <color name="grid_state_focused">#80000000</color>
+    <color name="app_bg">#f1f3f8</color>
+    <color name="line">#D0D0D0</color>
+    <color name="grey6">#666666</color>
+    <color name="rc_conversation_top_bg">#f2faff</color>
+
+
+</resources>

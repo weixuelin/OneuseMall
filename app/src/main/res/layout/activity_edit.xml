@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/titlebar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/qb_px_20"
+            android:paddingRight="@dimen/qb_px_20">
+
+            <RelativeLayout
+                android:id="@+id/relative_edit_head"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_140">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="头像"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/qb_px_28" />
+
+                <ImageView
+                    android:layout_width="@dimen/qb_px_100"
+                    android:layout_height="@dimen/qb_px_100"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/default_head" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_1"
+                android:background="@color/line" />
+
+            <RelativeLayout
+                android:id="@+id/relative_edit_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_90">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="昵称"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/qb_px_28" />
+
+                <EditText
+                    android:layout_width="@dimen/qb_px_400"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right|center_vertical"
+                    android:background="@color/transparent"
+                    android:textColor="@color/grey_hint"
+                    android:textSize="@dimen/qb_px_26" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_1"
+                android:background="@color/line" />
+
+            <RelativeLayout
+                android:id="@+id/relative_edit_sex"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_90">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="性别"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/qb_px_28" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/right"
+                    android:drawablePadding="@dimen/qb_px_20"
+                    android:text="男"
+                    android:textColor="@color/grey_hint"
+                    android:textSize="@dimen/qb_px_26" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_1"
+                android:background="@color/line" />
+
+            <RelativeLayout
+                android:id="@+id/relative_edit_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_90">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="生日"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/qb_px_28" />
+
+                <TextView
+                    android:id="@+id/text_edit_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/right"
+                    android:drawablePadding="@dimen/qb_px_20"
+                    android:textColor="@color/grey_hint"
+                    android:textSize="@dimen/qb_px_26" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/qb_px_20"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/qb_px_20"
+            android:paddingRight="@dimen/qb_px_20">
+
+            <RelativeLayout
+                android:id="@+id/relative_edit_safe"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qb_px_90">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="账户安全"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/qb_px_28" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/right" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_edit_out"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_80"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/qb_px_70"
+        android:layout_marginTop="@dimen/qb_px_50"
+        android:layout_marginRight="@dimen/qb_px_70"
+        android:layout_marginBottom="@dimen/qb_px_70"
+        android:background="@drawable/btn_red_circle"
+        android:text="退出登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/qb_px_30" />
+</RelativeLayout>
